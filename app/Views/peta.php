@@ -1,6 +1,4 @@
-<?= $this->extend('templates/main') ?>
 
-<?= $this->section('content') ?>
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -17,5 +15,4 @@
     </div>
 
 </div>
-<!-- /.container-fluid -->
-<?= $this->endSection() ?>
+

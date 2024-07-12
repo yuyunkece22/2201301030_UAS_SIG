@@ -18,34 +18,41 @@ class Kantordesa extends BaseController
     public function index()
     {
         $data['data'] = $this->kantordesamodel->findAll();
-        $data['title'] = $this->title;
 
         echo view('templates/navbar');
         echo view('templates/main');
-        echo view('templates/sidebar');
+        echo view('beranda', $data);
+
+    }
+
+    public function kantordesa()
+    {
+        $data['data'] = $this->kantordesamodel->findAll();
+
+        echo view('templates/navbar');
+        echo view('templates/main');
         echo view('kantordesa', $data);
-        echo view('templates/footer', $data);
+
     }
 
     public function peta()
     {
-        $data['data'] = $this->kantordesamodel->getdata();
-
+        $data['data'] = $this->kantordesamodel->findAll();
 
         echo view('templates/navbar');
-        echo view('templates/main');
-        echo view('templates/sidebar');
         echo view('peta', $data);
+        echo view('templates/main');
         echo view('templates/footer', $data);
     }
 
 
     public function tambah()
     {
+
         echo view('templates/navbar');
         echo view('templates/main');
         echo view('tambah_kantordesa');
-        echo view('templates/footer');
+
     }
 
     public function proses_tambah_data()
@@ -82,8 +89,9 @@ class Kantordesa extends BaseController
         echo view('templates/navbar');
         echo view('templates/main');
         echo view('edit_kantordesa', $data);
-        echo view('templates/footer');
+       
     }
+
 
     public function proses_edit_data()
     {

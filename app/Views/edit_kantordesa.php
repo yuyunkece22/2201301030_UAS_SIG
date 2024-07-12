@@ -21,28 +21,30 @@
                                 <div class="form-group">
                                     <label>Nama Kantor Desa</label>
                                     <input type="hidden" class="form-control" name="id_kantordesa"
-                                        value="<?php echo $data->id_kantordesa ?>">
+                                        value="<?php echo $data['id_kantordesa'] ?>">
                                     <input type="text" class="form-control" name="nama_kantordesa"
-                                        value="<?php echo $data->nama_kantordesa ?>">
+                                        value="<?php echo $data['nama_kantordesa'] ?>">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Alamat</label>
                                     <input type="text" class="form-control" name="alamat"
-                                        value="<?php echo $data->alamat ?>">
+                                        value="<?php echo $data['alamat'] ?>">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Latitude</label>
-                                    <input type="text" class="form-control" name="lat" value="<?php echo $data->lat ?>">
+                                    <input type="text" class="form-control" name="lat"
+                                        value="<?php echo $data['lat'] ?>">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Longitude</label>
-                                    <input type="text" class="form-control" name="lng" value="<?php echo $data->lng ?>">
+                                    <input type="text" class="form-control" name="lng"
+                                        value="<?php echo $data['lng'] ?>">
                                 </div>
                             </div>
                             <div class="col-md-12">
