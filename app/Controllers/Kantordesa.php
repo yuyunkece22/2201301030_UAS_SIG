@@ -89,7 +89,7 @@ class Kantordesa extends BaseController
         echo view('templates/navbar');
         echo view('templates/main');
         echo view('edit_kantordesa', $data);
-       
+
     }
 
 
